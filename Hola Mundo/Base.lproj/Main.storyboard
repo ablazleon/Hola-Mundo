@@ -18,46 +18,54 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hola Mundo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p17-kI-I68">
-                                <rect key="frame" x="126" y="51" width="123" height="28"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Hola Mundo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p17-kI-I68">
+                                <rect key="frame" x="126" y="20" width="123" height="28"/>
                                 <fontDescription key="fontDescription" type="italicSystem" pointSize="23"/>
                                 <color key="textColor" red="0.32369780539999998" green="0.1063579395" blue="0.574860394" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="olV-Vu-mCu">
-                                <rect key="frame" x="232" y="143" width="57" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <state key="normal" title="Mundo">
-                                    <color key="titleColor" red="1" green="0.1857388616" blue="0.57339501380000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zQ1-yU-2Cv">
+                                <rect key="frame" x="238" y="70" width="48" height="30"/>
+                                <state key="normal" title="Mundo"/>
+                                <connections>
+                                    <action selector="updateMundo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="38L-E0-3lF"/>
+                                </connections>
                             </button>
-                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="oU1-sR-c7a">
-                                <rect key="frame" x="44" y="187" width="287" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lSp-A6-7KF">
+                                <rect key="frame" x="74" y="70" width="32" height="30"/>
+                                <state key="normal" title="Hola"/>
+                                <connections>
+                                    <action selector="updateHola:" destination="BYZ-38-t0r" eventType="touchUpInside" id="chv-iE-nFh"/>
+                                </connections>
+                            </button>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="ged-Ou-Ovj">
+                                <rect key="frame" x="16" y="200" width="343" height="447"/>
+                            </mapView>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="RQC-tQ-NcC">
+                                <rect key="frame" x="56" y="146" width="264" height="31"/>
                             </slider>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hola" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zdi-NF-2Oi">
-                                <rect key="frame" x="88" y="147" width="42" height="22"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <color key="textColor" red="1" green="0.1857388616" blue="0.57339501380000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <mtkView contentMode="scaleToFill" fixedFrame="YES" colorPixelFormat="BGRA8Unorm" depthStencilPixelFormat="Depth32Float" translatesAutoresizingMaskIntoConstraints="NO" id="mpG-K5-7cZ">
-                                <rect key="frame" x="38" y="278" width="291" height="330"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </mtkView>
                         </subviews>
                         <color key="backgroundColor" red="0.63227136247488791" green="0.95089267035131209" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="lSp-A6-7KF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="74" id="0Zs-ld-jl8"/>
                             <constraint firstItem="p17-kI-I68" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="31" id="AVl-CU-LjJ"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="p17-kI-I68" secondAttribute="trailing" constant="126" id="Gtx-r4-VmC"/>
-                            <constraint firstItem="p17-kI-I68" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="126" id="arz-Mk-Jgp"/>
+                            <constraint firstItem="p17-kI-I68" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Gwp-sH-OEv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ged-Ou-Ovj" secondAttribute="trailing" constant="16" id="HAX-Ru-imM"/>
+                            <constraint firstItem="lSp-A6-7KF" firstAttribute="top" secondItem="p17-kI-I68" secondAttribute="bottom" constant="46" id="K5w-VR-M8z"/>
+                            <constraint firstItem="RQC-tQ-NcC" firstAttribute="top" secondItem="p17-kI-I68" secondAttribute="bottom" constant="67" id="STm-GJ-wp5"/>
+                            <constraint firstItem="RQC-tQ-NcC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="58" id="TWD-Y3-c8f"/>
+                            <constraint firstItem="ged-Ou-Ovj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="XUO-ns-9tm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="RQC-tQ-NcC" secondAttribute="trailing" constant="57" id="czm-9a-nOK"/>
+                            <constraint firstItem="zQ1-yU-2Cv" firstAttribute="top" secondItem="p17-kI-I68" secondAttribute="bottom" constant="46" id="dhR-y9-QFd"/>
+                            <constraint firstItem="ged-Ou-Ovj" firstAttribute="top" secondItem="RQC-tQ-NcC" secondAttribute="bottom" constant="24" id="hJg-cJ-09R"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zQ1-yU-2Cv" secondAttribute="trailing" constant="83" id="qo5-AV-q80"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ged-Ou-Ovj" secondAttribute="bottom" constant="20" id="xcL-pA-i7V"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="MKMapView" destination="mpG-K5-7cZ" id="BTN-xr-h8P"/>
+                        <outlet property="mapView" destination="ged-Ou-Ovj" id="Hvq-yX-ZnO"/>
+                        <outlet property="msgLabel" destination="p17-kI-I68" id="gma-Q7-9wj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

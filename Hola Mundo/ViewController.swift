@@ -12,7 +12,7 @@ import MapKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var msgLabel: UILabel!
-    @IBOutlet weak var MKMapView: MTKView!
+    @IBOutlet weak var mapView: MKMapView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,27 +23,27 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
 
-    @IBOutlet weak var UIBUtton: UIButton!
     
     @IBAction func updateHola(_ sender: UIButton) {
         msgLabel.text = "Hola"
     }
     
-    
+
     @IBAction func updateMundo(_ sender: UIButton) {
         msgLabel.text = "Mundo"
         
-        let center = CCLocationCoordinate2D(latitude: 40.452445, longitude: -3.726162)
-        let span = MKCoordinateSPan(latitudeDelta: 0.004, longitudeDelta: 0.004)
+        let center = CLLocationCoordinate2D(latitude: 40.452445, longitude: -3.726162)
+        let span = MKCoordinateSpan(latitudeDelta: 0.004, longitudeDelta: 0.004)
         let reg = MKCoordinateRegion(center: center, span: span)
         
-        mapView.setregion(reg, animated: true)
+        mapView.setRegion(reg, animated: true)
     }
     
     @IBAction func updateAlpha(_ sender: UISlider) {
         msgLabel.alpha = CGFloat(sender.value)
-        
+    
     }
 }
 
