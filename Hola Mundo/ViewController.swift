@@ -13,6 +13,7 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var msgLabel: UILabel!
     @IBOutlet weak var mapView: MKMapView!
+    @IBOutlet weak var slider: UISlider!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,21 +25,25 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    
     @IBAction func updateHola(_ sender: UIButton) {
         msgLabel.text = "Hola"
+        
+        // Ajusta el slider a 0.5
+        slider.value = 0.5
+        
+        // Sitúa el mapa en la Estatua de la Libertad
+        let center = CLLocationCoordinate2D(latitude: 40.6892, longitude: -74.0445)
+        let span = MKCoordinateSpan(latitudeDelta: 0.004, longitudeDelta: 0.004)
+        let reg = MKCoordinateRegion(center: center, span: span)
+        
+        mapView.setRegion(reg, animated: true)
     }
     
 
     @IBAction func updateMundo(_ sender: UIButton) {
         msgLabel.text = "Mundo"
         
-        let center = CLLocationCoordinate2D(latitude: 40.452445, longitude: -3.726162)
-        let span = MKCoordinateSpan(latitudeDelta: 0.004, longitudeDelta: 0.004)
-        let reg = MKCoordinateRegion(center: center, span: span)
-        
-        mapView.setRegion(reg, animated: true)
+
     }
     
     @IBAction func updateAlpha(_ sender: UISlider) {

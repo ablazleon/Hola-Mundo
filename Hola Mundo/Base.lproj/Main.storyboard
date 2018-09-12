@@ -69,6 +69,7 @@
                     <connections>
                         <outlet property="mapView" destination="ged-Ou-Ovj" id="Hvq-yX-ZnO"/>
                         <outlet property="msgLabel" destination="p17-kI-I68" id="gma-Q7-9wj"/>
+                        <outlet property="slider" destination="RQC-tQ-NcC" id="osk-bj-bSy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
