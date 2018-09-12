@@ -12,6 +12,7 @@
 		3A62E6852145B176001D5C0B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A62E6832145B176001D5C0B /* Main.storyboard */; };
 		3A62E6872145B176001D5C0B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A62E6862145B176001D5C0B /* Assets.xcassets */; };
 		3A62E68A2145B176001D5C0B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A62E6882145B176001D5C0B /* LaunchScreen.storyboard */; };
+		3AF0C4602149A03700D9DA6D /* snoopy-imagen-animada-0007.gif in Resources */ = {isa = PBXBuildFile; fileRef = 3AF0C45F2149A03600D9DA6D /* snoopy-imagen-animada-0007.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		3A62E6862145B176001D5C0B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3A62E6892145B176001D5C0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3A62E68B2145B176001D5C0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3AF0C45F2149A03600D9DA6D /* snoopy-imagen-animada-0007.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = "snoopy-imagen-animada-0007.gif"; path = "../../../../../Downloads/snoopy-imagen-animada-0007.gif"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				3A62E6832145B176001D5C0B /* Main.storyboard */,
 				3A62E6862145B176001D5C0B /* Assets.xcassets */,
 				3A62E6882145B176001D5C0B /* LaunchScreen.storyboard */,
+				3AF0C45F2149A03600D9DA6D /* snoopy-imagen-animada-0007.gif */,
 				3A62E68B2145B176001D5C0B /* Info.plist */,
 			);
 			path = "Hola Mundo";
@@ -126,6 +129,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3AF0C4602149A03700D9DA6D /* snoopy-imagen-animada-0007.gif in Resources */,
 				3A62E68A2145B176001D5C0B /* LaunchScreen.storyboard in Resources */,
 				3A62E6872145B176001D5C0B /* Assets.xcassets in Resources */,
 				3A62E6852145B176001D5C0B /* Main.storyboard in Resources */,

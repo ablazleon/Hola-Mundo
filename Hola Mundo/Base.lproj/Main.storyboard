@@ -39,14 +39,24 @@
                                 </connections>
                             </button>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="ged-Ou-Ovj">
-                                <rect key="frame" x="16" y="200" width="343" height="447"/>
+                                <rect key="frame" x="16" y="241" width="343" height="406"/>
                             </mapView>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="RQC-tQ-NcC">
-                                <rect key="frame" x="56" y="146" width="264" height="31"/>
+                                <rect key="frame" x="56" y="187" width="264" height="31"/>
                                 <connections>
                                     <action selector="updateAlpha:" destination="BYZ-38-t0r" eventType="valueChanged" id="dds-U3-5GH"/>
                                 </connections>
                             </slider>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9pg-7B-9uv">
+                                <rect key="frame" x="157" y="96" width="63" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <state key="normal" title="Sol">
+                                    <color key="titleColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="updateSol:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hFv-5D-aL9"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.63227136247488791" green="0.95089267035131209" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -55,13 +65,16 @@
                             <constraint firstItem="p17-kI-I68" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Gwp-sH-OEv"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ged-Ou-Ovj" secondAttribute="trailing" constant="16" id="HAX-Ru-imM"/>
                             <constraint firstItem="lSp-A6-7KF" firstAttribute="top" secondItem="p17-kI-I68" secondAttribute="bottom" constant="46" id="K5w-VR-M8z"/>
-                            <constraint firstItem="RQC-tQ-NcC" firstAttribute="top" secondItem="p17-kI-I68" secondAttribute="bottom" constant="67" id="STm-GJ-wp5"/>
+                            <constraint firstItem="9pg-7B-9uv" firstAttribute="top" secondItem="p17-kI-I68" secondAttribute="bottom" constant="48" id="LLa-Eu-I36"/>
+                            <constraint firstItem="9pg-7B-9uv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="157" id="Mfz-2u-kiF"/>
                             <constraint firstItem="RQC-tQ-NcC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="58" id="TWD-Y3-c8f"/>
                             <constraint firstItem="ged-Ou-Ovj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="XUO-ns-9tm"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="RQC-tQ-NcC" secondAttribute="trailing" constant="57" id="czm-9a-nOK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9pg-7B-9uv" secondAttribute="trailing" constant="155" id="dBG-JA-TcV"/>
                             <constraint firstItem="zQ1-yU-2Cv" firstAttribute="top" secondItem="p17-kI-I68" secondAttribute="bottom" constant="46" id="dhR-y9-QFd"/>
                             <constraint firstItem="ged-Ou-Ovj" firstAttribute="top" secondItem="RQC-tQ-NcC" secondAttribute="bottom" constant="24" id="hJg-cJ-09R"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zQ1-yU-2Cv" secondAttribute="trailing" constant="83" id="qo5-AV-q80"/>
+                            <constraint firstItem="RQC-tQ-NcC" firstAttribute="top" secondItem="9pg-7B-9uv" secondAttribute="bottom" constant="20" id="xZo-yj-JnY"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ged-Ou-Ovj" secondAttribute="bottom" constant="20" id="xcL-pA-i7V"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
