@@ -31,6 +31,9 @@ class ViewController: UIViewController {
         // Ajusta el slider a 0.5
         slider.value = 0.5
         
+        // Poner en modod híbrido
+        mapView.mapType = .hybrid
+
         // Sitúa el mapa en la Estatua de la Libertad
         let center = CLLocationCoordinate2D(latitude: 40.6892, longitude: -74.0445)
         let span = MKCoordinateSpan(latitudeDelta: 0.004, longitudeDelta: 0.004)
@@ -43,6 +46,8 @@ class ViewController: UIViewController {
     @IBAction func updateMundo(_ sender: UIButton) {
         msgLabel.text = "Mundo"
         
+        // Poner en modod satélite
+        mapView.mapType = .satellite
 
     }
     
