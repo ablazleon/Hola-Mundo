@@ -20,11 +20,11 @@
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¡Vamos!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R54-uJ-I71">
                                 <rect key="frame" x="140" y="81" width="100" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="snoopy-imagen-animada-0007.gif" translatesAutoresizingMaskIntoConstraints="NO" id="feI-TR-W6v">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launch" translatesAutoresizingMaskIntoConstraints="NO" id="feI-TR-W6v">
                                 <rect key="frame" x="56" y="268" width="268" height="201"/>
                             </imageView>
                         </subviews>
@@ -48,6 +48,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="snoopy-imagen-animada-0007.gif" width="242" height="185"/>
+        <image name="launch" width="121" height="92"/>
     </resources>
 </document>
