@@ -43,7 +43,6 @@ class ViewController: UIViewController {
     
     @IBAction func updateAlpha(_ sender: UISlider) {
         msgLabel.alpha = CGFloat(sender.value)
-    
     }
 }
 
