@@ -58,7 +58,7 @@ class ViewController: UIViewController {
     @IBAction func updateSol(_ sender: UIButton) {
         
         // Sitúa el mapa en la puerta del Sol de Madrid
-        let center = CLLocationCoordinate2D(latitude: 40.4146500, longitude: -3.7004000)
+        let center = CLLocationCoordinate2D(latitude: 40.4168845, longitude: -3.7037405)
         let span = MKCoordinateSpan(latitudeDelta: 0.004, longitudeDelta: 0.004)
         let reg = MKCoordinateRegion(center: center, span: span)
         
