@@ -18,26 +18,30 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¡Vamos!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R54-uJ-I71">
-                                <rect key="frame" x="140" y="81" width="100" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launch" translatesAutoresizingMaskIntoConstraints="NO" id="Sf5-In-lPD">
+                                <rect key="frame" x="16" y="247" width="343" height="219"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Estamos preparándolo todo. . ." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BgE-7v-MfY">
+                                <rect key="frame" x="20" y="72" width="335" height="74"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="74" id="b0l-fC-Ufx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launch" translatesAutoresizingMaskIntoConstraints="NO" id="feI-TR-W6v">
-                                <rect key="frame" x="56" y="268" width="268" height="201"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="R54-uJ-I71" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="140" id="90Y-2g-92g"/>
-                            <constraint firstItem="feI-TR-W6v" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="56" id="eJM-Zb-0Zt"/>
-                            <constraint firstItem="feI-TR-W6v" firstAttribute="top" secondItem="R54-uJ-I71" secondAttribute="bottom" constant="166" id="gp1-8u-tGV"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="R54-uJ-I71" secondAttribute="trailing" constant="135" id="h8v-ij-b9z"/>
-                            <constraint firstItem="R54-uJ-I71" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="61" id="k1u-qz-FTn"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="feI-TR-W6v" secondAttribute="trailing" constant="51" id="mix-UT-1Fj"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="feI-TR-W6v" secondAttribute="bottom" constant="198" id="t9B-LP-GmR"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="R54-uJ-I71" secondAttribute="bottom" constant="565" id="zVP-CF-Jw8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BgE-7v-MfY" secondAttribute="trailing" constant="20" id="484-gr-CXP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Sf5-In-lPD" secondAttribute="trailing" constant="16" id="Od0-S5-q3G"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Sf5-In-lPD" secondAttribute="trailing" constant="16" id="TBq-8V-SZm"/>
+                            <constraint firstItem="Sf5-In-lPD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="YSr-mq-qCa"/>
+                            <constraint firstItem="BgE-7v-MfY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="cGz-pi-qM9"/>
+                            <constraint firstItem="Sf5-In-lPD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="g5U-Dt-hLv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Sf5-In-lPD" secondAttribute="bottom" constant="201" id="lBz-R9-TdH"/>
+                            <constraint firstItem="Sf5-In-lPD" firstAttribute="top" secondItem="BgE-7v-MfY" secondAttribute="bottom" constant="101" id="qzJ-Bv-DEh"/>
+                            <constraint firstItem="BgE-7v-MfY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="52" id="vws-k2-Yfp"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -48,6 +52,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="launch" width="121" height="92"/>
+        <image name="launch" width="355" height="219"/>
     </resources>
 </document>
