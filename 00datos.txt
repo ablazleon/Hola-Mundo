@@ -1,0 +1,8 @@
+g831
+
+Hengxuan Ying
+Adrián Blázquez León
+
+    Todo nos funciona según las especificaciones de la entrega. Sin embargo,
+no sabemos porqué la imagen de "launch" no se ve si el móvil se encuentra
+ en posición horizontal.
